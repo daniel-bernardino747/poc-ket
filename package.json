@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register src/server.ts' -e ts",
-    "husky": "husky install"
+    "husky": "husky install",
+    "build": "tsc && tsc-alias"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +37,7 @@
     "nodemon": "^2.0.20",
     "prettier": "^2.8.3",
     "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.2",
     "tsconfig-paths": "^4.1.2",
     "typescript": "^4.9.4"
   }
